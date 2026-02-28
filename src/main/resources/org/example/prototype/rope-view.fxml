@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="406.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.prototype.RopeController">
+  <columnConstraints>
+    <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="14.0" minWidth="0.0" prefWidth="11.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="13.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="purchaseTable" prefHeight="80.0" prefWidth="531.0" GridPane.columnIndex="1" GridPane.columnSpan="11" GridPane.rowIndex="1" GridPane.rowSpan="3">
+        <columns>
+          <TableColumn fx:id="linkCol" prefWidth="100.0" resizable="false" text="Link sản phẩm" />
+          <TableColumn fx:id="amtCol" prefWidth="60.0" resizable="false" text="Số lượng" />
+            <TableColumn fx:id="btCol" prefWidth="143.0" resizable="false" text="Thời gian mua" />
+            <TableColumn fx:id="rtCol" prefWidth="100.0" resizable="false" text="Thời gian nhận" />
+            <TableColumn fx:id="twCol" prefWidth="165.0" resizable="false" text="Phạm vi giao (số ngày)" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="wCheck" mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-padding: 10;" text="Thời tiết" GridPane.columnIndex="12" GridPane.columnSpan="7" GridPane.rowIndex="1" />
+      <CheckBox fx:id="hCheck" layoutX="481.0" layoutY="105.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="112.0" style="-fx-padding: 10;" text="Dịp lễ" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="3" />
+      <CheckBox fx:id="tCheck" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="163.0" style="-fx-padding: 10;" text="Giao thông" GridPane.columnIndex="12" GridPane.columnSpan="8" GridPane.rowIndex="2" />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="computeButton" disable="true" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" text="Hoàn tất" GridPane.columnIndex="11" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="785.0" text="ROPE" textAlignment="CENTER" GridPane.columnSpan="14">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="602.0" layoutY="354.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" text="Thêm" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+      <Button fx:id="addTestDataButton" layoutX="474.0" layoutY="354.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" text="Thêm dữ liệu tạo sẵn" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+   </children>
+</GridPane>
