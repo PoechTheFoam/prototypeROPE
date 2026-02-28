@@ -68,6 +68,7 @@ public class RopeController {
                 Scene scene=new Scene(root);
                 AddController add_controller=loader.getController();
                 popup.setScene(scene);
+                popup.setTitle("R.O.P.E Add");
                 popup.initModality(Modality.APPLICATION_MODAL);
                 popup.showAndWait();
                 if (add_controller.getPurchase()!=null) {

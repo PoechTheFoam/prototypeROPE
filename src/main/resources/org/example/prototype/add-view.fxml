@@ -44,7 +44,7 @@
       <DatePicker fx:id="btPicker" maxWidth="-Infinity" prefHeight="25.0" prefWidth="108.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
       <TextField fx:id="twTextField" cacheShape="false" centerShape="false" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
       <DatePicker fx:id="rtPicker" maxWidth="-Infinity" prefHeight="25.0" prefWidth="108.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-      <Label fx:id="errorMsg" alignment="CENTER" prefHeight="17.0" prefWidth="512.0" text="Label" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="7" GridPane.rowIndex="6" />
+      <Label fx:id="errorMsg" alignment="CENTER" prefHeight="17.0" prefWidth="512.0" text="Label" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="7" GridPane.rowIndex="7" />
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="271.0" text="Thêm trường dữ liệu cho công cụ" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowSpan="2">
          <font>
             <Font name="System Bold" size="20.0" />
